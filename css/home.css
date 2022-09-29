@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --corfontPadrao:#808080;
+    --fontFamilyPadrao:font-family: 'Poppins', sans-serif;
+    --colorBrack:#000000;
+    --colorwhite:#FFFFFF;
+    --colornavlink:#97A6A0;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--corfontPadrao);
+    font-family: var(--fontFamilyPadrao);
+    font-size: 20px;
+    background-color: var(--colorBrack);
+}
+
+.logo h1 {
+    color: #97A6A0;
+}
+
+.logo {
+    margin-left: 1.5rem;
+}
+
+.header {
+    background-color: var(--colorBrack) ;
+    
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var;
+    padding: 10px 14px;
+    color: var(--colornavlink);
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 400ms;
+}
+
+.nav-bar a:hover {
+    color: var(--colorwhite);
+}
+
+.nav-bar {
+    margin-right: 1.5rem;
+}
+
+.banner-elden img {
+    width: 100%;
+    
+}
+
+.videos {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.trailher {
+    width: 90%;
+    margin: auto;
+}
+
+.trailher iframe{
+    border-radius: 30px;
+    width: 100%;
+}
+
+.history {
+    width: 90%;
+    border: 1px solid var(--colornavlink);
+    padding: 20px;
+    margin-right: 10px;
+    margin: auto;
+}
+
+
+
+.history h3 {
+    text-align: justify;
+    font-size: 19px;
+}

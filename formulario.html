@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>LOGO</h1>
+      </div>
+
+      <div class="nav-bar">
+        <ul>
+          <li><a href="#">Entrar</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Categorias</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container-form">
+        <div class="banner-form">
+          <img src="img/banner-login.png" alt="" />
+        </div>
+
+        <div class="form">
+          <!-- <div class="title-form">
+                    <p>Cria Sua conta agora mesmo</p>
+                </div> -->
+
+          <form id="form" action="#" method="post">
+            <div class="criarconta">
+              <h1>Crie a sua conta</h1>
+            </div>
+
+            <div class="input-box">
+              <label id="labelNome" for="nome">Nome</label>
+
+              <div id="div-nome">
+                <input type="text"name="nome" id="nome" placeholder="Digite seu nome"required/>
+                <span id="spanNome"></span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label id="labelEmail" for="email">E-mail</label>
+
+              <div id="divEmail">
+                <input type="email"name="email"id="email"placeholder="ex:email@me"required/>
+                <span id="spanEmail"></span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="confirmEmail">Confirme o E-mail</label>
+              <div class="confEmail">
+                <input type="email"name="confirmEmail"id="confirmEmail" placeholder="confirm email" required/>
+                <span id="spanConfEmail"><img src="img/alert.png" alt=""></span>
+              </div>
+
+            </div>
+            <div class="input-box">
+              <label for="cep">CEP</label>
+              <div id="div-cep">
+                <input type="number" name="cep" id="cep" placeholder="Digite se cep" required/>
+                <span id="spanCep">good</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="dataNascimento">Data de Nascimento</label>
+              <div id="aniversario">
+                <input type="date" name="dataNascimento" id="dataNascimento" placeholder="ex: DD/MM/AAAA"required/>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="password">Senha</label>
+              <div id="divSenha">
+                <input type="password"name="password"id="password"placeholder="crie sua senha"required/>
+                <span id="spanSenha">good</span>
+            </div>
+
+            <div class="button-cadastrar">
+              <button type="submit">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

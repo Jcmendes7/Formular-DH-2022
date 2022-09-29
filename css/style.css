@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --corfontPadrao:#808080;
+    --fontFamilyPadrao:font-family: 'Poppins', sans-serif;
+    --colorBrack:#000000;
+    --colorwhite:#FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--corfontPadrao);
+    font-family: var(--fontFamilyPadrao);
+    font-size: 20px;
+    background-color: var(--colorwhite);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.header {
+    background-color: var(--colorBrack) ;
+    
+    max-width: 100%;
+    height: 130px;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--colorwhite);
+    padding: 10px 14px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.nav-bar a:hover {
+    color: var(--corfontPadrao);
+}
+
+.logo {
+    margin-left: 1.5rem;
+}
+
+.container-form {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+
+    box-shadow: 2px 2px 10px var(--corfontPadrao);
+}
+
+.form form {
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input-box input {
+    padding: 10px;
+    width: 100%;
+    transition: all 400ms;
+    outline: 0;
+    border: 0;
+    
+    
+
+}
+
+
+.button-cadastrar {
+    margin-top: 10px;
+
+}
+
+.button-cadastrar button {
+    padding: 12px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    transition: all 450ms;
+
+}
+
+
+.banner-form {
+    height: 524px;
+}
+
+.banner-form img {
+    height: 100%;
+}
+#divEmail  {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#spanEmail {
+    font-size: 18px;
+    color: #06c706;
+}
+
+.confEmail {
+    
+        display: flex;
+        border-bottom: 2px solid black;
+
+}
+
+#spanConfEmail {
+    display: none;
+}
+
+#spanConfEmail img{
+    width: 25px;   
+}
+
+#div-nome {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#div-cep {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#divSenha {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#spanSenha {
+    display: none;
+}
+
+#aniversario {
+    border-bottom: 2px solid black;
+}
+
+.button-cadastrar button:hover {
+    background: #e2e2e2;
+}
+
+@media(min-width:375px) {
+    .input-box input {
+        width: 265px;
+    }
+}
+
+@media(min-width:499px) {
+    .input-box input {
+        width: 100%;
+    }
+
+    .banner-form img {
+        width: 279px;
+    }
+
+    
+
+    .input-box input {
+        width: 100%;
+    }
+}
+
