@@ -56,7 +56,7 @@ function validarEmail(email) {
 inputEmail.addEventListener("input", () => {
     if(validarEmail(inputEmail.value) !== true) {
         divEmail.style.borderColor = "red"
-        spanEmail.innerHTML = "ex:email@me"
+        spanEmail.innerHTML = "ex:email@me.com"
         spanEmail.style.color = "red"
         validEmail = false;
     }else {
@@ -93,6 +93,11 @@ inputConfirmEmail.addEventListener("input", (event) => {
     }
 })
 
+ // deve conter ao menos um dígito
+ // deve conter ao menos uma letra minúscula
+ // deve conter ao menos uma letra maiúscula
+ // deve conter ao menos um caractere especial
+ // deve conter ao menos 12 dos caracteres mencionados
 
 
 function validarSenha(senha) {
@@ -118,9 +123,7 @@ inputSenha.addEventListener("input",() => {
 
 form.addEventListener("submit", (event) => {
     if(validNome == false || validEmail == false || validConfEmail == false || validCep == false || validAniversario  == false || validSenha == false) {
-        console.log("enviar formulario")
-        event.preventDefault();
-    }else {
         
+        event.preventDefault();
     }
 })
